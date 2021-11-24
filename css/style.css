@@ -7,11 +7,23 @@ html, body {
 }
 
 body {
-    background: url(../background.png) repeat 800px 500px;
     padding: 0;
     margin: 0;
+    background: url(../background.png) repeat 800px 500px;
+}
 
-  
+.wrapper, .container, .content, .body, .greeting,
+.information, .result, .menuGame, .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
 }
 .b1{
     background:rgb(131,190,178);
@@ -25,25 +37,12 @@ h3, label{
     color:rgb(13, 109, 61);
     
 }
-.wrapper, .container, .content, .body, .greeting,
-.information, .result {
-    display: flex;
-    flex-direction: column;
-    justify-content:top;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.wrapper {
-    height: 100%;
-    width: 100%;
-}
-
 .container {
     background-color: rgb(131,190,178);
     box-shadow: 0 0 10px 5px rgb(13, 109, 61);
-    width: 550px;
+    width: 950px;
 }
+
 
 .content .head {
     margin: 5px auto;
@@ -62,4 +61,22 @@ h3, label{
 .information {
     margin: 0 10px;
     text-align: center;
+}
+
+.menuGame button {
+    margin: 3px auto;
+}
+
+table {
+    border: 2px solid gray;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid gray;
+    margin: 1px;
+}
+
+td button {
+    margin: 0.5px;
 }
